@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Corinthia";
+  src: url("../assets/Corinthia-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-color: black;
   margin: 0;
@@ -30,8 +37,9 @@ nav a {
   color: #fff;
   text-decoration: none;
   margin-left: 30px;
-  font-size: 2vh;
+  font-size: 120%;
   padding-bottom: 4px;
+  font-family: "Helvetica Neue";
 }
 
 nav a::after {
@@ -69,4 +77,19 @@ nav a:hover::after {
 .hero-image img {
   height: 80vh;
   object-fit: cover;
+  opacity: 0.8;
+}
+
+.hero-text {
+  margin-left: -50px;
+}
+
+.hero-text p {
+  font-family: "Corinthia", cursive;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
 }
