@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 25px;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+header img.logo {
+  height: 50px;
+}
+
+nav a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 120%;
+  padding-bottom: 4px;
+  font-family: "Helvetica Neue";
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
