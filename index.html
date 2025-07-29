@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Steve Jobs</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles/index.css">
-        <link rel="stylesheet" href="styles/header.css">
-    </head>
-    <body>
-        <div id="header"></div>
-        <section class="hero">
-            <div class="hero-text">
-                <h1>The only way to do great work is <br/>to love what you do.</h1>
-                 <p>– Steve Jobs</p>
-            </div>
-            <div class="hero-image">
-                <img src="assets/sj.png" alt="Steve Jobs">
-            </div>
-        </section>
-        <script>
-            fetch('header.html')
-            .then(res => res.text())
-            .then(data => {
-            document.getElementById('header').innerHTML = data;
-    });
-        </script>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Steve Jobs</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>The only way to do great work is <br />to love what you do.</h1>
+        <p>– Steve Jobs</p>
+      </div>
+      <div class="hero-image">
+        <img src="assets/sj.png" alt="Steve Jobs" />
+      </div>
+    </section>
+    <script>
+      fetch("header.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+  </body>
 </html>
