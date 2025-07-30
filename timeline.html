@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Steve Jobs | Zeitstrahl</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/timeline.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="timeline">
+      <div class="container left">
+        <div class="content">
+          <h2>1955 – Geburt</h2>
+          <p>
+            📍 24. Februar 1955<br />
+            Steve Jobs wird in San Francisco geboren und später adoptiert.
+          </p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>1976 – Gründung von Apple</h2>
+          <p>
+            📍 1. April 1976<br />
+            Zusammen mit Steve Wozniak gründet er Apple Computer – im Elternhaus
+            der Jobs-Familie.
+          </p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2>1984 – Vorstellung des Macintosh</h2>
+          <p>
+            📍 24. Januar 1984<br />
+            Apple präsentiert den ersten erfolgreichen Computer mit grafischer
+            Benutzeroberfläche.
+          </p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>1985 – Verlassen von Apple</h2>
+          <p>
+            📍 September 1985<br />
+            Jobs wird nach internen Konflikten bei Apple entmachtet und verlässt
+            das Unternehmen.
+          </p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2>1986 – Gründung von Pixar</h2>
+          <p>
+            📍 1986<br />
+            Jobs kauft die Animationssparte von Lucasfilm und formt daraus
+            Pixar.
+          </p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>1995 – Durchbruch mit Toy Story</h2>
+          <p>
+            📍 22. November 1995<br />
+            Pixar veröffentlicht Toy Story, den ersten vollständig
+            computeranimierten Kinofilm.
+          </p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2>1997 – Rückkehr zu Apple</h2>
+          <p>
+            📍 1997<br />
+            Apple kauft Jobs’ Firma NeXT – er kehrt zurück und wird bald wieder
+            CEO.
+          </p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>2001 – Vorstellung des iPod</h2>
+          <p>
+            📍 23. Oktober 2001<br />
+            Der iPod markiert den Beginn von Apples Erfolg im Bereich digitaler
+            Unterhaltung.
+          </p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2>2007 – Launch des iPhones</h2>
+          <p>
+            📍 9. Januar 2007<br />
+            Mit dem iPhone verändert Jobs die Welt der Mobiltelefone
+            grundlegend.
+          </p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>2011 – Tod von Steve Jobs</h2>
+          <p>
+            📍 5. Oktober 2011<br />
+            Jobs stirbt im Alter von 56 Jahren an Krebs. Seine Visionen prägten
+            die Technik-Welt nachhaltig.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      fetch("header.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
